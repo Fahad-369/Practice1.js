@@ -146,7 +146,7 @@
 //                     letterGrade="F";
 // }
 // console.log(letterGrade)
-
+ 
 
 
 // //         SPREAD AND REST
@@ -179,11 +179,11 @@
 // let food3="pizza3";
 
 // function getFood(...foods){
-//     return foods
+//     console.log(foods)
 // }
 
-// let foods= getFood(food1,food2,food3)
-// console.log(foods)
+// getFood(food1,food2,food3)
+
 
 
 
@@ -315,7 +315,7 @@
     
 // function func3(callback){
 //     console.log("function 3")
-//     callback()
+//     callback()             
 //     }
 
 //     func1(()=>{
@@ -483,7 +483,6 @@
 // }
 
 
-
 // //    ALPHABATICAL ORDER
 //   function alpha(str){
 //     return str.split("").sort().join("");
@@ -491,7 +490,9 @@
 //   console.log(alpha("apple"))
 
 
+
 // //   FIRST WORD CAPITAL
+
 // let x= "ali has no num"
 // function capital(str){
 // let allwords = str.split(" ").map(function (word){
@@ -500,6 +501,7 @@
 // return allwords.join(" ")
 // };
 // console.log(capital(x))
+
 
 
 // //   CHAR OCCUERNCE
@@ -518,6 +520,7 @@
 
 
 
+
 // //   CHAR OCCUERNCE
 // function occ(str){
 //     let occurence = {};
@@ -530,19 +533,18 @@
 //     })
 //     return occurence;
 // }
-// console.log(occ("apple"))
+// console.log(occ("apple s"))
 
 
 
 // //   LOOP AN ARRAY
-let a=[]
-let arr=[1,2,3,4,5];
-let sum=0;
-for(let i=0;i<arr.length;i++){
-    sum+=arr[i]
-    a.push(sum)
-}
-console.log(a)
+// let arr=[1,2,3,4,5];
+// let sum=0;
+// for(let i=0;i<arr.length;i++){
+//     sum+=arr[i]
+// }
+// console.log(sum)
+
 
 
 // let arr=[1,2,3,4,"fvg",5];
@@ -607,7 +609,7 @@ console.log(a)
 //         return e;
 //     })
 // }
-// let a=[1,2,3,4,5]
+// let a=[1,2,3,4,5]   
 // console.log(clone(a))
 
 
@@ -635,6 +637,8 @@ console.log(a)
 
 
 
+
+
 // //         MIN VALUe   
 // function myArrayMin(arr) {
 //     let len = arr.length;
@@ -658,8 +662,6 @@ console.log(a)
 //     }
 // }
 // console.log(b)
-
-
 
 
 // //         MAX VALUE
@@ -689,6 +691,7 @@ console.log(a)
 
 
 // //       SECOND LARGEST NUMBER
+
 // function findSecondLargest(arr) {
 //     let largest = arr[0];
 //     let secondLargest = -Infinity;
@@ -708,7 +711,7 @@ console.log(a)
 
 // let a=[1,2,3,4,4,5,5,3,2,6,6]
 
-// let y=a.sort((a,b)=>{
+// let y=a.sort((a,b)=>{]
 //     if(a>b)return 1;
 //      if(a<b)return -1;
 //    return 0;
@@ -761,7 +764,7 @@ console.log(a)
 // let maxlength=0;
 // let subStr=new Set();
 
-//     while(end<str.length){
+//     while(end<str.length){       
 //         if(!subStr.has(str[end])){
 //             subStr.add(str[end]);
 //             maxlength=Math.max(maxlength,subStr.size);
@@ -817,7 +820,7 @@ console.log(a)
 // for(let i=1; i<=n; i++){
 //     for(let j=1; j<=i;j++){
 //         pattern+=i
-//     }
+//     } 
 //     pattern+="\n"
 // }
 // console.log(pattern)
@@ -914,7 +917,7 @@ console.log(a)
 
 
 
-// //   NUMBER PYRAMID 2
+// //   Floyd's PYRAMID 2
 // let n=3;
 // let pattern="";
 // let num=1;
@@ -985,7 +988,29 @@ console.log(a)
 //    };
 //    console.log(resutl)
 
+// // Function to calculate factorial
+// function fact(n) {
+//     let factorial = 1;
+//     for (let i = 2; i <= n; i++) {
+//         factorial *= i;
+//     }
+//     return factorial;
+// }
 
+// // Function to print Pascal's Triangle
+// function printPascalsTriangle(n) {
+//     for (let i = 0; i < n; i++) {
+//         let row = "";
+//         for (let j = 0; j <= i; j++) {
+//             row += (fact(i) / (fact(j) * fact(i - j))) + " ";
+//         }
+//         console.log(row);
+//     }
+// }
+
+// // Call the function to generate Pascal's Triangle with 5 rows
+// printPascalsTriangle(5);
+    
 
 // //   PASCAL PATTERN
 // let pattern=""
@@ -1004,9 +1029,6 @@ console.log(a)
 //       pattern+="\n"
 //      }
 // console.log(pattern)
-
-
-
 
 // // PALINDROME
 // let n=5;
@@ -1034,7 +1056,7 @@ console.log(a)
 // let n=9;
 // let pattern="";
 
-// for(let i=1 ; i<=3;i++){
+// for(let i=1 ; i<=3;i++){  
 //   for(let j=1; j<=n;j++){
 //    // console.log(j)
 //     if(((i+j)%4==0)|| (i==2 && j%4==0)){
@@ -1064,17 +1086,17 @@ console.log(a)
 
 
 // //  FIBONACCI SEQUENCE
-// let n=7;
+// let n=5;
 // let x1=0;
 // let x2=1;
 
 // let next;
-// console.log(x1)
-// console.log(x2)
-// for(let i=0; i<=n; i++){
+// // console.log(x1)
+// // console.log(x2)
+// for(let i=1; i<=n; i++){
 
 //   next=x1+x2;
-//   console.log(next)
+//   console.log(x1)
 //   x1=x2;
 //   x2=next
 // }
@@ -1146,8 +1168,6 @@ console.log(a)
 //     }
 // }
 // console.log(a)
-
-
 
 
 // // DELET ELEMENT IN ARRAY
@@ -1292,7 +1312,7 @@ console.log(a)
 //     if(start<=end){
 //         temp=data[start];
 //         data[start]=data[end];
-//         data[end]=temp;
+//         data[end]=temp; 
 //         reverse(data,start+1,end-1)
 //     }
  
@@ -1367,6 +1387,7 @@ console.log(a)
 
 
 
+
 // //STACK WITH CLASS
 // class Stack{
 //     stack=[];
@@ -1406,7 +1427,59 @@ console.log(a)
 // st1.display()
 // // question?= class k sath string reverse kro
 
+// class Stack{
+//     stack=[];
+//     maxSize;
+//     constructor(size){
+//         this.maxSize =size;
+//         this.currentSize = this.stack.length;
+//     }
+//     push(newVal){
+//         if(this.currentSize>=this.maxSize){
+//             alert("stack is full")
+//         }else{
+//             this.stack[this.currentSize]=newVal
+//             this.currentSize++;
+//         }
+//     }
 
+// pop(){
+//     let lastRemovedItem=this.stack[this.currentSize-1]
+//    if(this.currentSize>0){
+//        this.currentSize--;
+//        this.stack.length=this.currentSize;
+//    }else{
+//     alert("stack is already empty")
+//    }
+//    return lastRemovedItem
+// }
+// reverseStr(item){
+//     for(let i=0; i<item.length;i++){
+//         st1.push(item[i])
+//     }
+//     for(let i=0; i<item.length;i++){
+//        item[i]=st1.pop();
+//     }
+// }
+
+// display(){
+//     console.log(this.stack)
+// }
+// }
+
+// st1=new Stack(5);
+// st1.push(20)
+// st1.push(23);
+// // st1.push(30);
+// // st1.push(40);
+// st1.pop()
+// let str="anil";
+// str=str.split("");
+// st1.reverseStr(str)
+// // console.log(str.join(""))
+
+
+// st1.display()
 
 
 
@@ -1512,7 +1585,7 @@ console.log(a)
 
 // //  CIRCULAR QUEUE
 // class  QUEUE{
-//     constructor(size){
+//     constructor(size){ 
 //         this.max=size;
 //         this.items=new Array(size);
 //         this.currentSize=0;
@@ -1596,7 +1669,7 @@ console.log(a)
 //     }
 // }
 // console.log(position)
-
+ 
 
 
 // // BINARY SEARCH RECURSIVE
@@ -1627,26 +1700,26 @@ console.log(a)
 
 
 // //SECLECTION SORT
-// let x=[20,12,53,6];
+let x=[20,12,53,6];
 
-// function slectionSort(data){
-//     let minId;
-//     //console.log(data)
-//     for(let i=0; i<data.length;i++){
-//         minId=i;
-//         for(let j=i+1; j<data.length;j++){
-//              console.log(j)
-//             if(data[j]<data[i]){
-//                 minId=j;
-//             }
-//         }
-//         let temp=data[minId];
-//         data[minId]=data[i];
-//         data[i]=temp
-//     }
-// }
-// slectionSort(x)
-// console.log(x)
+function slectionSort(data){
+    let minId;
+    //console.log(data)
+    for(let i=0; i<data.length;i++){
+        for(let j=i+1; j<data.length;j++){
+            //  console.log(j)
+            if(data[j]<data[i]){
+            
+        
+        let temp=data[i];
+        data[i]=data[j];
+        data[j]=temp
+            }
+          }
+    }
+}
+slectionSort(x)
+console.log(x)
 
 
 
@@ -1678,7 +1751,7 @@ console.log(a)
 
 
 //  //    INSERTION SORT
-  
+
 // let arr=[12,11,13,5,6];
 // function insertionSort(data){
 //     let i,current, j;
@@ -1697,6 +1770,38 @@ console.log(a)
 // console.log(insertionSort(arr))
 
 
+
+// let arr2=[12,11,13,5,6];
+// function insertionSort(data){
+//     for(i=0 ;i<data.length; i++){
+//         let j=i;
+//         while(j>0 && data[j-1]>data[j]){
+//             let temp = data[j-1]
+//             data[j-1]=data[j]
+//             data[j]=temp;
+//             j--
+//         }
+//     }
+//     return data;
+// }
+// console.log(insertionSort(arr2))
+
+
+
+
+// let arr3=[12,11,13,5,6];
+// function insertionSort(data){
+//     for(i=0 ;i<data.length; i++){
+//         for(j=i; j>0; j--){
+//             if(data[j-1]<data[j]) break;
+//             let temp =data[j];
+//             data[j]= data[j-1];
+//             data[j-1]=temp;
+//         }
+//     }
+//     return data;
+// }
+// console.log(insertionSort(arr3))
 
 
 // //  QUICK SORT
@@ -1793,14 +1898,13 @@ console.log(a)
 
 
 
-
 // //LINKED LIST
 // class List{
 //     constructor(data){
 //         this.head={
 //             value:data,
 //             next:null,
-//         };
+//         };  
 //         this.tail=this.head;
 //            this.size=1;
 //     }
@@ -1916,7 +2020,7 @@ console.log(a)
 // console.log(list)
 
 
-
+ 
 
 // //INSERT NODE IN LINKED LIST
 // class List{
@@ -2003,7 +2107,7 @@ console.log(a)
 // list.appendNode(400);
 // list.appendNode(500);
 
-// list.searchNode(400)
+// list.searchNode(400)?
 
 
 
@@ -2546,10 +2650,10 @@ console.log(a)
 //     }
 //     addEdge(v1,v2){
 //        if(!this.data[v1]){
-//         this.addEdge(v1)
+//         this.addVertex(v1)
 //        }
 //        if(!this.data[v2]){
-//         this.addEdge(v2)
+//         this.addVertex(v2)
 //        }
 //        this.data[v1].push(v2)
 //        this.data[v2].push(v1)
